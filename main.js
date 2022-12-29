@@ -4,7 +4,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  // your config
+  // your config( firestore )
 };
 
 if (!firebase.apps.length) {
@@ -35,7 +35,7 @@ const answerButton = document.getElementById('answerButton');
 const remoteVideo = document.getElementById('remoteVideo');
 const hangupButton = document.getElementById('hangupButton');
 
-// 1. Setup media sources
+// Setup media sources
 
 webcamButton.onclick = async () => {
   localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
@@ -61,7 +61,7 @@ webcamButton.onclick = async () => {
   webcamButton.disabled = true;
 };
 
-// 2. Create an offer
+// Create an offer
 callButton.onclick = async () => {
   // Reference Firestore collections for signaling
   const callDoc = firestore.collection('calls').doc();
@@ -108,7 +108,7 @@ callButton.onclick = async () => {
   hangupButton.disabled = false;
 };
 
-// 3. Answer the call with the unique ID
+// Answer the call(unique ID)
 answerButton.onclick = async () => {
   const callId = callInput.value;
   const callDoc = firestore.collection('calls').doc(callId);
