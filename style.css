@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+body {
+  font-family: 'Syne Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin: 80px 10px;
+  background-color: black;
+}
+
+video {
+  width: 40vw;
+  height: 30vw;
+  margin: 2rem;
+  background: #2c3e50;
+  border-radius: 10px;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem;
+  text-align: left;
+}
+
+.button {
+  background-color: #440671;
+  border: none;
+  color: rgb(213, 205, 205);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 6%;
+}
+
+.exit{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-left: 6%;
+  border-radius: 4px;
+  color: rgb(10, 10, 10);
+}
+
+.call{
+  display: flex;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#callInput{
+  width: 15rem;
+  margin-left: 2rem;
+}
+input::placeholder {              
+  text-align: center;
+}
+
+.join{
+  background-color: #52ae58;
+  color: #000;
+  font-size: 14px;
+  border-radius: 10%;
+}
+
+#callButton{
+  background-color: #a6ae52;
+  color: #000;
+  font-size: 16px;
+  border-radius: 0.5rem;
+}
+
+.svg{
+  width: 1.5rem;
+  height: 1rem;
+  margin: 0.5rem;
+}

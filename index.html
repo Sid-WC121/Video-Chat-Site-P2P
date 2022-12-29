@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pep Chat</title>
+  </head>
+  <body>
+    <h2 class="header">PEP CHAT</h2>
+    <div class="videos">
+      <span>
+        <h3>YOU</h3>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <h3>PEER</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+
+    <div class="btn">
+      <button class="button" id="webcamButton">Start webcam</button>
+    </div>
+    <div class="call">
+      <span>
+        <h2>Make a Call</h2>
+        <button id="callButton" disabled>Create Call (offer)</button>
+      </span>
+    </div>
+    <div class="call">
+      <span>
+        <h2>Join a Call</h2>
+        <input id="callInput" placeholder="Room id"/>
+        <button class="join" id="answerButton" disabled>Join</button>
+      </span>
+    </div>
+    <p>Answer the call from a different browser/window or device</p>
+    <button class="exit" id="hangupButton" disabled>Hangup<svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 10v-5l8 7-8 7v-5h-8v-4h8zm-16-8v20h14v-2h-12v-16h12v-2h-14z"/></svg></button>
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
